@@ -1,0 +1,15 @@
+<header class="page-header">
+  <a class="page-header__rss-link" href="/atom.xml">r</a>
+  <a class="page-header__twitter-link" href="https://twitter.com/largescaleJS_ua"></a>
+  <h4>
+    {%if page.subtitle %}
+      <small>
+        {{ page.subtitle }}
+      </small>
+    {% else %}
+      <small>
+        <a href="/" class="ignore-visited">«{{ site.title }}»</a> від {{ site.author }}
+      </small>
+    {% endif %}</h4>
+  <h1 class="page-header__title"><a class="page-header__title-link" href="{{ page.url }}">{{ page.title }}</a></h1>
+</header>

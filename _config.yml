@@ -1,0 +1,10 @@
+author: "Едді Османі"
+title: "Патерни для масштабованих додатків JavaScript"
+
+markdown: kramdown
+exclude: ['Gemfile', 'Gemfile.lock', 'makefile']
+pygments: true
+
+production_url: http://largescalejs.in.ua/
+baseurl: /
+permalink: /:title

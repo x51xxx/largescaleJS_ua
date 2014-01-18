@@ -1,0 +1,218 @@
+@import '_nib'
+iconic-stroke('../iconic/')
+
+/**
+ * Variables
+ */
+shadow__tiny = 0 1px 1px rgba(0,0,0,.15)
+shadow__pressed_effect = 0 1px 0 rgba(255,255,255, .5)
+font__base = Georgia, 'Times New Roman', serif
+font__size = 18px
+font__size_small = 14px
+color__bg = #F4F4F4
+color__text = #404040
+color__text_second = #888
+color__link = #0066CC
+color__link_visited = #550066
+color__blue = #B4D2F0
+color__blue_dark = #99B3CC
+color__yellow = #F0E9B4
+color__yellow_dark = #CCC699
+img__noise = url('/assets/img/noise.png')
+
+*
+  box-sizing: border-box
+
+html
+body
+  margin 0
+  height 100%
+
+html
+  font-family font__base
+  font-size font__size
+
+
+body
+  reset-body()
+  background img__noise color__bg
+  color color__text
+  text-shadow shadow__pressed_effect
+
+
+h1
+h2
+h3
+h4
+h5
+  reset-font()
+  reset-box-model()
+  margin-bottom .5em
+  small
+    font-size .6em
+    color color__text_second
+
+h1
+  font-size 2em
+
+h2
+  font-size 1.8em
+
+h3
+  font-size 1.3em
+
+h4
+  font-size 1.2em
+
+h5
+  font-size 1em
+  font-weight bold
+
+ul
+ol
+  margin 1em 0
+
+a
+  // display inline-block
+  padding: 0.6em; // Увеличение зоны нажатия
+  margin: -0.6em; // для планшетов
+  color color__link
+  text-decoration none
+  &:hover
+    text-decoration underline
+  &:visited
+    color color__link_visited
+    &.ignore-visited
+      color color__link
+
+.wrapper
+  width 720px
+  margin 0 auto
+  padding 4em 0 1em
+  position relative
+  min-height 100%
+
+.footer
+  absolute bottom 0
+  padding-bottom 1em
+  font-size .8em
+  font-style italic
+
+.intro
+  margin-bottom 1em
+  font-size font__size_small
+  color color__text_second
+
+.unpublished-post
+  color color__text_second
+
+.content
+  margin 2em 0 5em
+  line-height 1.5
+  position relative
+
+  img
+    box-shadow shadow__tiny
+
+
+.prevnext
+  margin 2em 0
+  position relative
+  clearfix()
+
+.prevnext__previous-arrow
+.prevnext__next-arrow
+  position absolute
+  font-size 1rem
+
+.prevnext__previous-arrow
+  left -1.5em
+
+.prevnext__next-arrow
+  right -1.5em
+
+.prevnext__previous
+.prevnext__next
+  width 40%
+  float left
+
+.prevnext__next
+  float right
+  text-align right
+
+.message
+  padding .5em 1em
+  box-shadow shadow__tiny
+  background img__noise color__blue
+  border color__blue_dark
+  &.info
+    background-color color__yellow
+    border color__yellow_dark
+  code
+    background-color rgba(255,255,255,.5);
+
+.sidenote
+  absolute left 100%
+  width 240px
+  margin-left 1.5em
+  padding 1em
+  font-size font__size_small
+  background-color #fff
+  box-shadow shadow__tiny
+  .num
+    color color__text_second
+
+.page-header__title a
+  margin 0
+  padding 0
+
+.page-header__rss-link
+  font-family "IconicStroke"
+  display block
+  absolute right 0
+  font-size 1.4em
+  color color__text
+  text-shadow none
+  margin 0
+  padding 0
+  &:visited
+   color color__text
+  &:hover
+    color color__text
+    text-decoration none
+
+
+.page-header__twitter-link
+  display block
+  size 20px
+  margin 0
+  padding 0
+  absolute right 2em
+  background url('/assets/img/twitter-icon.png')
+  background-size cover
+
+.page-header__title-link
+  color color__text
+  &:visited
+   color color__text
+  &:hover
+    color color__link
+
+code
+  background-color #FFF
+  box-shadow shadow__tiny
+  font-size 15px
+
+pre
+  padding 18px 18px
+  overflow scroll
+  background-color #fff
+  box-shadow shadow__tiny
+
+code
+  font-family Consolas, Monaco, 'Andale Mono', monospace
+  padding 4px 4px 2px
+
+pre > code
+  background-color transparent
+  box-shadow none
