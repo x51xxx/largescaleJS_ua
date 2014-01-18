@@ -1,7 +1,8 @@
 # Patterns For Large-Scale JavaScript Application Architecture
-#### Addy x51xxx
+####  Addy Osmani
 
-Переклад на українську мову. Addy [x51xxx][1]
+Переклад на українську мову. Addy Osmani[1]
+Використаний [переклад][4]
 
 ### Запуск сайту локально
 
@@ -35,6 +36,7 @@
     jekyll serve --watch --drafts
 
 
-[1]: https://twitter.com/x51xxx
+[1]: https://twitter.com/addyosmani
 [2]: https://github.com/x51xxx/Patterns-For-Large-Scale-JavaScript-Application-Architecture/tree/gh-pages/_includes/translation
 [3]: https://github.com/FMRobot/FM-guidelines
+[3]: https://github.com/shuvalov-anton/largescaleJS_ru
